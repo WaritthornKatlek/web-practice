@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Web App</title>
+<style>
+/* CSS styles for the tiles */
+.tile {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- HTML snippet for the front page -->
+<div class="tile" id="menu-tile">
+    <a href="/menu">Menu</a>
+</div>
+<div class="tile" id="specials-tile">
+    <span>Specials</span>
+</div>
+<div class="tile" id="map-tile">
+    <a href="/map">Map</a>
+</div>
+
+<script>
+// JavaScript code for redirecting to a random category page
+document.getElementById("specials-tile").onclick = function() {
+    var categories = ["Lunch", "Dinner", "Sushi", /* Add more categories as needed */];
+    var randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    window.location.href = "/category/" + randomCategory; // Modify the URL as per your server's routing
+};
+</script>
+
+</body>
+</html>
