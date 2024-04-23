@@ -2208,5 +2208,48 @@ html{--annotation-background-color:var(--google-green-50);--annotation-text-colo
       </template>
      </dom-if>
     </slot>
-    <!--_html_template_end_-->
-  </cr-toast>
+   </cr-toast>
+   <!--_html_template_end_-->
+</cr-most-visited>
+<dom-if style="display: none;">
+ <template>
+  #doccument-fragment
+ </template>
+</dom-if>
+<ntp-middle-slot-promo>
+ #shadow-root (open)
+  <!--_html_template_start_-->
+  <style> :host([hidden]),[hidden]{display:none!important} </style>
+  <style>
+   .icon-arrow-back{--cr-icon-image:url('chrome://resources/images/icon_arrow_back.svg')}.icon-arrow-dropdown{--cr-icon-image:url('chrome://resources/images/icon_arrow_dropdown.svg')}.icon-arrow-drop-down-cr23{--cr-icon-image:url('chrome://resources/images/icon_arrow_drop_down_cr23.svg')}.icon-arrow-drop-up-cr23{--cr-icon-image:url('chrome://resources/images/icon_arrow_drop_up_cr23.svg')}.icon-cancel{--cr-icon-image:url('chrome://resources/images/icon_cancel.svg')}.icon-clear{--cr-icon-image:url('chrome://resources/images/icon_clear.svg')}.icon-copy-content{--cr-icon-image:url('chrome://resources/images/icon_copy_content.svg')}.icon-delete-gray{--cr-icon-image:url('chrome://resources/images/icon_delete_gray.svg')}.icon-edit{--cr-icon-image:url('chrome://resources/images/icon_edit.svg')}.icon-file{--cr-icon-image:url('chrome://resources/images/icon_filetype_generic.svg')}.icon-folder-open{--cr-icon-image:url('chrome://resources/images/icon_folder_open.svg')}.icon-picture-delete{--cr-icon-image:url('chrome://resources/images/icon_picture_delete.svg')}.icon-expand-less{--cr-icon-image:url('chrome://resources/images/icon_expand_less.svg')}.icon-expand-more{--cr-icon-image:url('chrome://resources/images/icon_expand_more.svg')}.icon-external{--cr-icon-image:url('chrome://resources/images/open_in_new.svg')}.icon-more-vert{--cr-icon-image:url('chrome://resources/images/icon_more_vert.svg')}.icon-refresh{--cr-icon-image:url('chrome://resources/images/icon_refresh.svg')}.icon-search{--cr-icon-image:url('chrome://resources/images/icon_search.svg')}.icon-settings{--cr-icon-image:url('chrome://resources/images/icon_settings.svg')}.icon-visibility{--cr-icon-image:url('chrome://resources/images/icon_visibility.svg')}.icon-visibility-off{--cr-icon-image:url('chrome://resources/images/icon_visibility_off.svg')}.subpage-arrow{--cr-icon-image:url('chrome://resources/images/arrow_right.svg')}.cr-icon{-webkit-mask-image:var(--cr-icon-image);-webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:var(--cr-icon-size);background-color:var(--cr-icon-color,var(--google-grey-700));flex-shrink:0;height:var(--cr-icon-ripple-size);margin-inline-end:var(--cr-icon-ripple-margin);margin-inline-start:var(--cr-icon-button-margin-start);user-select:none;width:var(--cr-icon-ripple-size)}:host-context([dir=rtl]) .cr-icon{transform:scaleX(-1)}.cr-icon.no-overlap{margin-inline-end:0;margin-inline-start:0}@media (prefers-color-scheme:dark){.cr-icon{background-color:var(--cr-icon-color,var(--google-grey-500))}}
+  </style>
+  <style include="cr-hidden-style cr-icons">
+   :host{font-size:12px;max-width:537px;white-space:pre}#promoAndDismissContainer{align-items:center;background-color:var(--color-new-tab-page-promo-background);border:solid var(--color-new-tab-page-border) 1px;border-radius:24px;box-sizing:border-box;color:var(--color-new-tab-page-primary-foreground);display:flex;flex-direction:row;height:30px;justify-content:center}#promoContainer{align-items:center;display:flex;overflow-x:clip;padding-inline-end:8px}:host([shown-middle-slot-promo-id_]) #promoContainer{padding-inline-end:2px}#promoContainer>:first-child{margin-inline-start:8px}a{color:var(--color-new-tab-page-link);cursor:pointer;text-decoration:underline}a:focus{border-radius:2px;box-shadow:var(--ntp-focus-shadow);outline:0}img{background-color:var(--color-new-tab-page-promo-image-background);border-radius:50%;height:20px;margin-inline-end:4px;pointer-events:none;width:20px}#dismissPromoButton{--cr-icon-button-icon-size:14px;--cr-icon-button-size:20px;--cr-icon-button-fill-color:var(--color-new-tab-page-primary-foreground);color:var(--color-new-tab-page-primary-foreground);margin-inline-end:4px;margin-inline-start:8px}#promoContainer>:last-child{overflow:hidden;text-overflow:ellipsis}
+  </style>
+  <div id="promoAndDismissContainer" hidden>
+   <dom-if style="display: none;">
+    <template>
+     #docccument-fragment
+    </template>
+   </dom-if>
+  </div>
+  <cr-toast id="dismissPromoButtonToast" duration="10000">
+   #shadow-root (open)
+    <!--_html_template_start_-->
+    <style>
+     :host{--cr-toast-background:#323232;--cr-toast-button-color:var(--google-blue-300);--cr-toast-text-color:#fff}@media (prefers-color-scheme:dark){:host{--cr-toast-background:var(--google-grey-900) linear-gradient(rgba(255, 255, 255, .06), rgba(255, 255, 255, .06));--cr-toast-button-color:var(--google-blue-300);--cr-toast-text-color:var(--google-grey-200)}}:host{align-items:center;background:var(--cr-toast-background);border-radius:4px;bottom:0;box-shadow:0 2px 4px 0 rgba(0,0,0,.28);box-sizing:border-box;display:flex;margin:24px;max-width:var(--cr-toast-max-width,568px);min-height:52px;min-width:288px;opacity:0;padding:0 24px;position:fixed;transform:translateY(100px);transition:opacity .3s,transform .3s;visibility:hidden;z-index:1}:host-context([chrome-refresh-2023]):host{--cr-toast-background:var(--color-toast-background,
+            var(--cr-fallback-color-inverse-surface));--cr-toast-button-color:var(--color-toast-button,
+            var(--cr-fallback-color-inverse-primary));--cr-toast-text-color:var(--color-toast-foreground,
+            var(--cr-fallback-color-inverse-on-surface));border-radius:8px;line-height:20px;padding:0 16px}:host-context([dir=ltr]){left:0}:host-context([dir=rtl]){right:0}:host([open]){opacity:1;transform:translateY(0);visibility:visible}:host ::slotted(*){color:var(--cr-toast-text-color)}:host ::slotted(cr-button){background-color:transparent!important;border:none!important;color:var(--cr-toast-button-color)!important;margin-inline-start:32px!important;min-width:52px!important;padding:8px!important}:host ::slotted(cr-button:hover){background-color:transparent!important}:host-context([chrome-refresh-2023]) ::slotted(cr-button:last-of-type){margin-inline-end:-8px}
+    </style>
+    <slot>
+     <div id="dismissPromoButtonToastMessage"> คุณจะไม่เห็นข้อความที่เจาะจงแบบนี้อีก </div>
+     <cr-button id="undoDismissPromoButton" aria-label="กด Ctrl+Z เพื่อเลิกทำ" role="button" tabindex="0" aria-disabled="false">
+      #shadow-root (open)
+       เลิกทำ
+     </cr-button>
+    </slot>
+   </cr-toast>    
+   <!--_html_template_end_-->
+  <ntp-middle-slot-promo>
+   
