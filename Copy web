@@ -2252,4 +2252,20 @@ html{--annotation-background-color:var(--google-green-50);--annotation-text-colo
    </cr-toast>    
    <!--_html_template_end_-->
   <ntp-middle-slot-promo>
+  <dom-if style="display: none;">
+   <template>
+    #shadow-root (open)
+   </template>
+  </dom-if>
+  <dom-if style="display: none;"><template>
+   </template>
+    #shadow-root (open)
+   </dom-if>
+   <a id="backgroundImageAttribution" hidden>
+    <div id="backgroundImageAttribution1Container">
+     <div id="linkIcon" hidden></div>
+     <div id="backgroundImageAttribution1"></div>
+    </div>
+    <div id="backgroundImageAttribution2" hidden></div>
+   </a>
    
