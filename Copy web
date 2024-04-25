@@ -2268,4 +2268,55 @@ html{--annotation-background-color:var(--google-green-50);--annotation-text-colo
     </div>
     <div id="backgroundImageAttribution2" hidden></div>
    </a>
-   
+   <div id="customizeButtons">
+    <dom-if style="display: none;">
+     <template>
+      #doccument-fragment
+     </template>
+    </dom-if>
+   <div id="customizeButtonContainer" class="customize-button-container">
+    <cr-button id="customizeButton" class="customize-button" title="ปรับแต่งหน้านี้" aria-pressed="false" role="button" tabindex="0" aria-disabled="false" data-native-id="NewTabPageUI::kCustomizeChromeButtonElementId" has-prefix-icon_>
+     #shadow-root (open)
+     <div id="customizeIcon" class="customize-icon" slot="prefix-icon"></div>
+     <div id="customizeText" class="customize-text"> ปรับแต่ง Chrome </div>
+    </cr-button>
+   </div>
+  </div>
+  <div id="themeAttribution" hidden>
+   <div>ธีมที่สร้างโดย</div>
+   <img src="undefined">
+   <img>
+  </div>
+  <dom-if style="display: none;">
+   <template>
+    #doccument-fragment
+   </template>
+  </dom-if>
+  <div id="contentBottomSpacer">
+ </div>
+ <dom-if restamp="" style="display: none;">
+  <template>
+   #doccument-fragment
+  </template>
+ </dom-if>
+ <dom-if id="customizeDialogIf" restamp="" style="display: none;">
+  <template>
+   #doccument-fragment
+  </template>
+ </dom-if>
+ <svg>
+  <defs>
+   <clipPath id="oneGoogleBarClipPath">
+    <rect x="-8" y="-8" width="369.6000061035156" height="72"></rect>
+   </clipPath>
+  </defs>
+ </svg>
+ <!--_html_template_end_-->
+ </ntp-app>
+<script type="module" src="new_tab_page.js"></script>
+<link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+<link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
+<link rel="stylesheet" href="shared_vars.css">
+<script type="module" src="./lazy_load.js"></script>
+</body>
+</html>
